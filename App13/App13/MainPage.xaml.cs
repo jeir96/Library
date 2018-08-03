@@ -13,5 +13,12 @@ namespace App13
 		{
 			InitializeComponent();
 		}
-	}
+
+        private async void ButtonClicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new SellAndBuy());
+        }
+
+
+    }
 }

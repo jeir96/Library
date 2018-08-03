@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App13.SellAndBuy">
+    <ContentPage.Content>
+
+
+
+
+        <ScrollView>
+
+            <StackLayout>
+
+                <Label Text="Procedure Type"
+                VerticalOptions="Center" 
+                HorizontalOptions="Start" 
+                Margin="0,16,0,0"/>
+                <Picker x:Name="picker" Title="Select A Procedure" Margin="0,0,0,16">
+                    <Picker.ItemsSource>
+                        <x:Array Type="{x:Type x:String}">
+                            <x:String>Sell</x:String>
+                            <x:String>Buy</x:String>
+                        </x:Array>
+                    </Picker.ItemsSource>
+                </Picker>
+
+
+                <Label Text="Post Type" Margin="0,0,0,0"/>
+                <Entry  Margin="0,0,0,16"></Entry>
+
+
+                <Label Text="Class name" Margin="0,0,0,0"/>
+                <Entry  Margin="0,0,0,16"></Entry>
+
+                <Label Text="Procedure Date"  Margin="0,0,0,0"/>
+                <Entry  Margin="0,0,0,16"></Entry>
+
+                <Label Text="Price"  Margin="0,0,0,0"/>
+                <Entry  Margin="0,0,0,16"></Entry>
+
+
+                <Label Text="Actual Price"  Margin="0,0,0,0"/>
+                <Entry  Margin="0,0,0,32"></Entry>
+
+                <Button Text="Submit" FontSize="16" BackgroundColor="Black" TextColor="White" Margin="50,0,50,0"/>
+
+            </StackLayout>
+
+
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

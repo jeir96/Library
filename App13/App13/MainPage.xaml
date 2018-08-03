@@ -4,11 +4,19 @@
              xmlns:local="clr-namespace:App13"
              x:Class="App13.MainPage">
 
-    <StackLayout>
+    <StackLayout VerticalOptions="CenterAndExpand">
         <!-- Place new controls here -->
-    	<Label Text="Welcome to Xamarin.Forms!" 
-           HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
+
+        <Label Text="User Name" Margin="0,0,0,8"/>
+        <Entry  x:Name="usernameEntry" Placeholder="username" Margin="0,0,0,16" HeightRequest="35"/>
+
+        <Label Text="Password" Margin="0,0,0,8"/>
+        <Entry x:Name="passwordEntry"  IsPassword="true" Placeholder="password"  Margin="0,0,0,16" HeightRequest="35"/>
+
+        <Button Clicked="ButtonClicked"  Text="Login" FontSize="16" BackgroundColor="Black" TextColor="White" Margin="50,0,50,0"/>
+
+        <Button  Text="Sign Up" FontSize="16" BackgroundColor="Black"  TextColor="White" Margin="50,16,50,0"/>
+
     </StackLayout>
 
 </ContentPage>
